@@ -195,7 +195,6 @@
     <!-- ===== Bottom Navigation ===== -->
     <style name="Widget.SUSTAINIQ.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
         <item name="backgroundTint">@color/color_surface</item>
-        <item name="itemActiveIndicatorColor">@color/color_primary_container</item>
         <item name="itemIconTint">@color/bottom_nav_icon_color</item>
         <item name="itemTextColor">@color/bottom_nav_icon_color</item>
         <item name="elevation">8dp</item>

@@ -4,11 +4,10 @@
     android:height="20dp"
     android:viewportWidth="20"
     android:viewportHeight="20">
-    <circle
-        android:cx="10"
-        android:cy="10"
-        android:r="9"
-        android:fillColor="#52A870" />
+    <!-- Circle drawn as path: M cx-r,cy  a r,r 0 1,0 2r,0  a r,r 0 1,0 -2r,0 -->
+    <path
+        android:fillColor="#52A870"
+        android:pathData="M1,10 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
     <path
         android:strokeColor="#FFFFFF"
         android:strokeWidth="1.8"

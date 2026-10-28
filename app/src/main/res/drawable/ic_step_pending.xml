@@ -4,11 +4,10 @@
     android:height="20dp"
     android:viewportWidth="20"
     android:viewportHeight="20">
-    <circle
-        android:cx="10"
-        android:cy="10"
-        android:r="8"
+    <!-- Outlined circle for pending step -->
+    <path
+        android:fillColor="#EBF1EC"
         android:strokeColor="#C4D9C8"
         android:strokeWidth="1.5"
-        android:fillColor="#EBF1EC" />
+        android:pathData="M2,10 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" />
 </vector>

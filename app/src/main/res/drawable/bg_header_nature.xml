@@ -50,12 +50,10 @@
         android:fillColor="#12A3C4A9"
         android:pathData="M282,145 L282,112 L292,112 L292,145 Z" />
 
-    <!-- Warm sun -->
-    <circle
-        android:cx="262"
-        android:cy="82"
-        android:r="10"
-        android:fillColor="#25E8A24A" />
+    <!-- Warm sun (circle as path: cx=262, cy=82, r=10) -->
+    <path
+        android:fillColor="#25E8A24A"
+        android:pathData="M252,82 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
 
     <!-- Drifting leaves -->
     <!-- Leaf 1 (upper) -->
