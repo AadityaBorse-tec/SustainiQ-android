@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <circle
+        android:cx="10"
+        android:cy="10"
+        android:r="8"
+        android:strokeColor="#C4D9C8"
+        android:strokeWidth="1.5"
+        android:fillColor="#EBF1EC" />
+</vector>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SUSTAINIQ Brand Colors -->
+    <!-- Primary Mint Green Palette -->
+    <color name="sustainiq_mint_50">#F0F9F4</color>
+    <color name="sustainiq_mint_100">#D8EFDF</color>
+    <color name="sustainiq_mint_200">#B5DEC5</color>
+    <color name="sustainiq_mint_300">#8ECBA8</color>
+    <color name="sustainiq_mint_400">#6DB98A</color>
+    <color name="sustainiq_mint_500">#52A870</color>
+    <color name="sustainiq_mint_600">#3D8F59</color>
+    <color name="sustainiq_mint_700">#2F7346</color>
+    <color name="sustainiq_mint_800">#245A37</color>
+    <color name="sustainiq_mint_900">#1A422A</color>
+
+    <!-- Sage Green Palette -->
+    <color name="sustainiq_sage_50">#F2F6F3</color>
+    <color name="sustainiq_sage_100">#E0EBE2</color>
+    <color name="sustainiq_sage_200">#C4D9C8</color>
+    <color name="sustainiq_sage_300">#A3C4A9</color>
+    <color name="sustainiq_sage_400">#82AF8B</color>
+    <color name="sustainiq_sage_500">#6B9A74</color>
+
+    <!-- Semantic UI Colors -->
+    <color name="color_primary">#3D8F59</color>
+    <color name="color_primary_variant">#2F7346</color>
+    <color name="color_primary_light">#A8D5B5</color>
+    <color name="color_primary_container">#D8EFDF</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_primary_container">#1A422A</color>
+
+    <color name="color_secondary">#6B9A74</color>
+    <color name="color_secondary_container">#E0EBE2</color>
+    <color name="color_on_secondary_container">#1A3020</color>
+
+    <color name="color_surface">#FAFDF9</color>
+    <color name="color_surface_variant">#F0F4F1</color>
+    <color name="color_surface_container">#EBF1EC</color>
+    <color name="color_surface_container_low">#F4F8F5</color>
+    <color name="color_surface_container_high">#E3EAE4</color>
+    <color name="color_background">#F6FAF7</color>
+    <color name="color_on_surface">#1C2B1F</color>
+    <color name="color_on_surface_variant">#4A5E4D</color>
+    <color name="color_outline">#7A9A7E</color>
+    <color name="color_outline_variant">#C4D9C8</color>
+
+    <!-- Status Colors -->
+    <color name="color_error">#BA1A1A</color>
+    <color name="color_error_container">#FFDAD6</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_pending_amber">#E8A24A</color>
+    <color name="color_pending_container">#FFF3E0</color>
+    <color name="color_water_blue">#5BA3C9</color>
+    <color name="color_water_container">#E1F3FB</color>
+    <color name="color_success">#3D8F59</color>
+    <color name="color_success_container">#D8EFDF</color>
+    <color name="color_warning">#E8A24A</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1C2B1F</color>
+    <color name="text_secondary">#4A5E4D</color>
+    <color name="text_tertiary">#7A9A7E</color>
+    <color name="text_hint">#9EB8A2</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="text_on_accent">#FFFFFF</color>
+
+    <!-- Card & Surface -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_shadow">#1A000000</color>
+    <color name="divider">#E8F0EA</color>
+    <color name="ripple_green">#1A3D8F59</color>
+
+    <!-- Status Badge Colors -->
+    <color name="status_reported">#9EB8A2</color>
+    <color name="status_triaged">#5BA3C9</color>
+    <color name="status_assigned">#7B68EE</color>
+    <color name="status_in_progress">#E8A24A</color>
+    <color name="status_submitted">#6B9A74</color>
+    <color name="status_verified">#3D8F59</color>
+    <color name="status_rejected">#BA1A1A</color>
+
+    <!-- Category Colors -->
+    <color name="cat_waste">#795548</color>
+    <color name="cat_waste_bg">#EFEBE9</color>
+    <color name="cat_water">#1565C0</color>
+    <color name="cat_water_bg">#E3F2FD</color>
+    <color name="cat_air">#546E7A</color>
+    <color name="cat_air_bg">#ECEFF1</color>
+    <color name="cat_green">#2E7D32</color>
+    <color name="cat_green_bg">#E8F5E9</color>
+    <color name="cat_other">#6D4C41</color>
+    <color name="cat_other_bg">#FBE9E7</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#80000000</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="160dp"
+    android:viewportWidth="360"
+    android:viewportHeight="160">
+
+    <!-- Soft rolling hills in background -->
+    <path
+        android:fillColor="#1552A870"
+        android:pathData="M160,160 C210,120 270,110 360,130 L360,160 Z" />
+    <path
+        android:fillColor="#128ECBA8"
+        android:pathData="M220,160 C260,135 300,125 360,140 L360,160 Z" />
+
+    <!-- Distant soft trees & city skyline silhouette -->
+    <!-- Tree 1 -->
+    <path
+        android:fillColor="#256B9A74"
+        android:pathData="M320,125 C320,110 332,100 338,100 C344,100 356,110 356,125 Z" />
+    <path
+        android:strokeColor="#256B9A74"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M338,125 L338,140" />
+
+    <!-- Tree 2 -->
+    <path
+        android:fillColor="#3052A870"
+        android:pathData="M295,130 C295,118 304,110 310,110 C316,110 325,118 325,130 Z" />
+    <path
+        android:strokeColor="#3052A870"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M310,130 L310,142" />
+
+    <!-- Tree 3 -->
+    <path
+        android:fillColor="#2082AF8B"
+        android:pathData="M275,138 C275,128 282,120 287,120 C292,120 299,128 299,138 Z" />
+
+    <!-- Distant subtle buildings -->
+    <path
+        android:fillColor="#15A3C4A9"
+        android:pathData="M260,145 L260,115 L272,115 L272,145 Z" />
+    <path
+        android:fillColor="#18A3C4A9"
+        android:pathData="M270,145 L270,105 L285,105 L285,145 Z" />
+    <path
+        android:fillColor="#12A3C4A9"
+        android:pathData="M282,145 L282,112 L292,112 L292,145 Z" />
+
+    <!-- Warm sun -->
+    <circle
+        android:cx="262"
+        android:cy="82"
+        android:r="10"
+        android:fillColor="#25E8A24A" />
+
+    <!-- Drifting leaves -->
+    <!-- Leaf 1 (upper) -->
+    <path
+        android:fillColor="#6052A870"
+        android:pathData="M185,82 C185,74 195,70 199,70 C199,78 189,82 185,82 Z" />
+    <!-- Leaf 2 (middle) -->
+    <path
+        android:fillColor="#506B9A74"
+        android:pathData="M210,95 C210,88 220,85 224,85 C224,92 214,95 210,95 Z" />
+    <!-- Leaf 3 (lower right) -->
+    <path
+        android:fillColor="#458ECBA8"
+        android:pathData="M232,112 C232,106 240,103 243,103 C243,109 235,112 232,112 Z" />
+
+    <!-- Flying birds in distance -->
+    <path
+        android:strokeColor="#401C2B1F"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M240,70 Q244,67 247,70 Q250,67 254,70" />
+    <path
+        android:strokeColor="#351C2B1F"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M260,62 Q263,59 265,62 Q267,59 270,62" />
+
+</vector>
