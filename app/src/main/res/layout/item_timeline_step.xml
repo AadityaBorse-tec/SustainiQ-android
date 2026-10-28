@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Timeline indicator column -->
+    <LinearLayout
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Dot -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_step_check"
+            app:tint="@color/color_primary"
+            android:contentDescription="Step indicator" />
+
+        <!-- Vertical Line -->
+        <View
+            android:id="@+id/view_step_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:minHeight="48dp"
+            android:background="@color/color_outline_variant" />
+    </LinearLayout>
+
+    <!-- Step details column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_step_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="IN PROGRESS"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_step_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 Oct, 10:30 AM"
+                android:textSize="11sp"
+                android:textColor="@color/text_tertiary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Ramesh Shinde (FIELD_WORKER)"
+            android:textSize="12sp"
+            android:textColor="@color/color_primary"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tv_step_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compactor vehicle dispatched to site"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

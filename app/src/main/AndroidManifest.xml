@@ -2,6 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <!-- Queries for Speech Recognition on Android 11+ -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+        <intent>
+            <action android:name="android.speech.action.RECOGNIZE_SPEECH" />
+        </intent>
+    </queries>
+
     <application
         android:name=".SustainIQApp"
         android:allowBackup="true"
@@ -31,9 +55,22 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
-        <!-- Auth Activity (Login / Register / Role Select) -->
+        <!-- Auth Activity (Login / Register) -->
         <activity
             android:name=".ui.auth.AuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Admin Access Code Verification Activity -->
+        <activity
+            android:name=".ui.auth.AdminAuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Admin Municipal Control Center Dashboard -->
+        <activity
+            android:name=".ui.admin.AdminDashboardActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
@@ -43,6 +80,36 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Report Detail Activity -->
+        <activity
+            android:name=".ui.reports.ReportDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Notifications Centre -->
+        <activity
+            android:name=".ui.notifications.NotificationsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- AI & Voice Assistant Activity -->
+        <activity
+            android:name=".ui.assistant.AssistantActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- File Provider for Photo Capture -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
     </application>
 

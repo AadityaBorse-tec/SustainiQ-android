@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">सस्टेनआईक्यू</string>
+    <string name="app_tagline">स्मार्ट शहर। हरित भविष्य।</string>
+    <string name="app_subtitle">आज स्वच्छता। कल हरियाली।</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_my_reports">मेरी रिपोर्ट्स</string>
+    <string name="nav_community">समुदाय</string>
+    <string name="nav_impact">प्रभाव</string>
+    <string name="profile">प्रोफ़ाइल</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">रिपोर्ट और समाधान</string>
+    <string name="onboarding_desc_1">अपने इलाके में पर्यावरणीय समस्याओं को तुरंत रिपोर्ट करें।</string>
+    <string name="onboarding_title_2">प्रगति ट्रैक करें</string>
+    <string name="onboarding_desc_2">रिपोर्ट से लेकर प्रमाणित समाधान तक हर कदम पर नज़र रखें।</string>
+    <string name="onboarding_title_3">प्रभाव मापें</string>
+    <string name="onboarding_desc_3">देखें कि आपका समुदाय मिलकर क्या बदलाव ला रहा है।</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="next">आगे</string>
+    <string name="skip">छोड़ें</string>
+
+    <!-- Auth -->
+    <string name="login">साइन इन</string>
+    <string name="register">खाता बनाएं</string>
+    <string name="email">ईमेल पता</string>
+    <string name="password">पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="select_role">अपनी भूमिका चुनें</string>
+    <string name="role_citizen">नागरिक</string>
+    <string name="role_admin">प्रशासक</string>
+    <string name="role_field_worker">क्षेत्रीय कार्यकर्ता</string>
+
+    <!-- Home Dashboard -->
+    <string name="good_morning">सुप्रभात,</string>
+    <string name="good_afternoon">शुभ दोपहर,</string>
+    <string name="good_evening">शुभ संध्या,</string>
+    <string name="report_an_issue">समस्या दर्ज करें</string>
+    <string name="report_cta_subtitle">स्वच्छ और हरित समाज बनाने में सहयोग दें</string>
+    <string name="reports_submitted">दर्ज रिपोर्ट्स</string>
+    <string name="resolved">समाधान हुआ</string>
+    <string name="community_impact">सामुदायिक प्रभाव</string>
+    <string name="report_by_category">श्रेणी अनुसार रिपोर्ट</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="recent_reports">हालिया रिपोर्ट्स</string>
+
+    <!-- Categories -->
+    <string name="cat_waste">कचरा</string>
+    <string name="cat_waste_sub">कचरा फेंकना, डंपिंग</string>
+    <string name="cat_water">जल</string>
+    <string name="cat_water_sub">लीकेज, जलभराव</string>
+    <string name="cat_air">वायु</string>
+    <string name="cat_air_sub">प्रदूषण, धुआं</string>
+    <string name="cat_green_spaces">हरित क्षेत्र</string>
+    <string name="cat_green_spaces_sub">पेड़, पार्क</string>
+    <string name="cat_other">अन्य</string>
+    <string name="cat_other_sub">पर्यावरणीय चिंताएं</string>
+
+    <!-- Status -->
+    <string name="status_reported">दर्ज किया गया</string>
+    <string name="status_triaged">समीक्षित</string>
+    <string name="status_assigned">आवंटित</string>
+    <string name="status_in_progress">प्रगति में</string>
+    <string name="status_submitted">प्रस्तुत</string>
+    <string name="status_verified">प्रमाणित</string>
+    <string name="status_rejected">अस्वीकृत</string>
+    <string name="status_escalated">शीर्ष स्तर पर</string>
+
+    <!-- Actions -->
+    <string name="cancel">रद्द करें</string>
+    <string name="submit">सबमिट करें</string>
+    <string name="logout">साइन आउट</string>
+</resources>

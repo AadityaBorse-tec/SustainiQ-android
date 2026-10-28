@@ -16,4 +16,8 @@
         android:id="@+id/nav_impact"
         android:icon="@drawable/ic_impact"
         android:title="@string/nav_impact" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
 </menu>

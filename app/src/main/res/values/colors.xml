@@ -91,7 +91,9 @@
     <color name="cat_other">#6D4C41</color>
     <color name="cat_other_bg">#FBE9E7</color>
 
-    <!-- Transparent -->
+    <!-- Base -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
     <color name="scrim">#80000000</color>
 </resources>

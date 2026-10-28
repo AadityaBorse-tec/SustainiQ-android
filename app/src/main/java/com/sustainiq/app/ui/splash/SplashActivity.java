@@ -1,55 +1,62 @@
 package com.sustainiq.app.ui.splash;
 
-import android.annotation.SuppressLint;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
-import android.view.animation.DecelerateInterpolator;
+import android.view.WindowManager;
+import android.view.animation.AccelerateDecelerateInterpolator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sustainiq.app.R;
-import com.sustainiq.app.ui.onboarding.OnboardingActivity;
+import com.sustainiq.app.ui.auth.AuthActivity;
 import com.sustainiq.app.ui.main.MainActivity;
+import com.sustainiq.app.ui.onboarding.OnboardingActivity;
 import com.sustainiq.app.util.SessionManager;
 
-@SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long LOGO_FADE_DURATION = 700;
-    private static final long TAGLINE_DELAY = 500;
-    private static final long TAGLINE_FADE_DURATION = 500;
-    private static final long NAVIGATE_DELAY = 1800;
+    private static final int SPLASH_DURATION_MS = 2400;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Full-screen, no status bar
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_splash);
 
-        View logoContainer = findViewById(R.id.logo_container);
-        View taglineText   = findViewById(R.id.tagline_text);
+        View imgSplash  = findViewById(R.id.img_splash);
+        View tvVersion  = findViewById(R.id.tv_version);
 
-        // Fade in logo
-        logoContainer.animate()
-                .alpha(1f)
-                .setDuration(LOGO_FADE_DURATION)
-                .setInterpolator(new DecelerateInterpolator())
-                .start();
+        // Fade-in the official splash image
+        ObjectAnimator imageFade = ObjectAnimator.ofFloat(imgSplash, "alpha", 0f, 1f);
+        imageFade.setDuration(900);
+        imageFade.setInterpolator(new AccelerateDecelerateInterpolator());
 
-        // Fade in tagline slightly after
-        new Handler(Looper.getMainLooper()).postDelayed(() ->
-            taglineText.animate()
-                    .alpha(1f)
-                    .setDuration(TAGLINE_FADE_DURATION)
-                    .setInterpolator(new DecelerateInterpolator())
-                    .start(),
-            TAGLINE_DELAY
-        );
+        // Slight scale-up for a premium reveal feel
+        ObjectAnimator scaleX = ObjectAnimator.ofFloat(imgSplash, "scaleX", 1.04f, 1f);
+        ObjectAnimator scaleY = ObjectAnimator.ofFloat(imgSplash, "scaleY", 1.04f, 1f);
+        scaleX.setDuration(900);
+        scaleY.setDuration(900);
 
-        // Navigate after total display time
-        new Handler(Looper.getMainLooper()).postDelayed(this::navigateNext, NAVIGATE_DELAY);
+        // Version label fades in after image
+        ObjectAnimator versionFade = ObjectAnimator.ofFloat(tvVersion, "alpha", 0f, 0.7f);
+        versionFade.setDuration(600);
+        versionFade.setStartDelay(700);
+
+        AnimatorSet set = new AnimatorSet();
+        set.playTogether(imageFade, scaleX, scaleY, versionFade);
+        set.start();
+
+        new Handler(Looper.getMainLooper()).postDelayed(this::navigateNext, SPLASH_DURATION_MS);
     }
 
     private void navigateNext() {
@@ -58,10 +65,12 @@ public class SplashActivity extends AppCompatActivity {
 
         if (!session.isOnboardingDone()) {
             intent = new Intent(this, OnboardingActivity.class);
-        } else if (session.isLoggedIn()) {
-            intent = new Intent(this, MainActivity.class);
+        } else if (!session.isLoggedIn()) {
+            intent = new Intent(this, AuthActivity.class);
+        } else if (session.getUserRole() == com.sustainiq.app.data.model.UserRole.ADMINISTRATOR) {
+            intent = new Intent(this, com.sustainiq.app.ui.admin.AdminDashboardActivity.class);
         } else {
-            intent = new Intent(this, OnboardingActivity.class);
+            intent = new Intent(this, MainActivity.class);
         }
 
         startActivity(intent);

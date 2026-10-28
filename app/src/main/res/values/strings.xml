@@ -41,7 +41,7 @@
     <string name="role_citizen_desc">Report issues, track status, measure community impact</string>
     <string name="role_admin_desc">Review, assign, verify and escalate reports</string>
     <string name="role_field_worker_desc">Receive tasks, update progress, submit resolutions</string>
-    <string name="demo_note">⚠ Demo mode: Authentication is local only. Not for production use.</string>
+    <string name="demo_note">Demo mode: Authentication is local only. Not for production use.</string>
 
     <!-- Home Dashboard -->
     <string name="good_morning">Good morning,</string>
@@ -62,7 +62,7 @@
 
     <!-- Categories -->
     <string name="cat_waste">Waste</string>
-    <string name="cat_waste_sub">Littering, dumping</string>
+    <string name="cat_waste_sub">Litter, dumping</string>
     <string name="cat_water">Water</string>
     <string name="cat_water_sub">Leaks, drainage</string>
     <string name="cat_air">Air</string>
@@ -70,7 +70,7 @@
     <string name="cat_green_spaces">Green Spaces</string>
     <string name="cat_green_spaces_sub">Trees, parks</string>
     <string name="cat_other">Other</string>
-    <string name="cat_other_sub">Environmental concerns</string>
+    <string name="cat_other_sub">Civic concerns</string>
 
     <!-- Status -->
     <string name="status_reported">Reported</string>
